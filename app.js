@@ -63,7 +63,14 @@ const agregarAlCarrito = (prodId) => {
     }
     
     actualizarCarrito() 
+    /* alert("a ingresado un producto"); */
+    Swal.fire(
+        'Se ha agregado tu compra al carrito!',
+        'Haz click en el botón!',
+        'success'
+      )
 }
+
 
 
 
