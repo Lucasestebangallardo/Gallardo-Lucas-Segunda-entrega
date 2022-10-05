@@ -164,10 +164,15 @@ p {
     border-left: 5px solid  rgb(25, 154, 177);
 }
 
-li {
-    max-width: 18%;
-    padding: 10px;
-    margin: 10px;
-    margin-bottom: 20px;
-    box-shadow: 2px 6px 3px 3px rgba(0, 0, 0, 0.3);
+#cointainer{
+    align-content: center;
+    padding: 40px;
+}
+
+h2 {
+    color:  rgb(25, 154, 177);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
 }

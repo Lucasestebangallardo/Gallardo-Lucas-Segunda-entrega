@@ -21,7 +21,8 @@ botonVaciar.addEventListener('click', () => {
     actualizarCarrito()
 })
 
-/* STOCK */
+
+
 stockProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
@@ -94,23 +95,6 @@ const actualizarCarrito = () => {
         contadorCarrito.innerText = carrito.reduce((acc, producto) => acc + producto.cantidad,0),
         precioTotal.innerText = carrito.reduce ((acc, producto) => acc + producto.precio*producto.cantidad, 0)
 )}
-
-fetch("./data.json")
-.then(response => response.json())
-.then(data => {
-  data.forEach(item => {
-    let li = document.createElement("li");
-    li.innerHTML = `
-      <h2>${item.nombre}</h1>
-      <h2>ID: ${item.id}</h2>
-      <b>$${item.precio}</b>
-      <p><img src=${item.img}></p>
-      <button id="agregar${item.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
-    `;
-    listado.append(li);
-  });
-  
-});
 
 
 
